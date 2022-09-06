@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif; }
+  *::selection {
+    background-color: black;
+    color: #3d3266; }
+
+header {
+  background-color: #3d3266;
+  display: flex;
+  gap: 20px;
+  grid-gap: 20px; }
+  header .logo {
+    width: 90px; }
+  header .navbar {
+    display: flex;
+    align-items: center; }
+    header .navbar .menu {
+      display: flex;
+      list-style-type: none;
+      gap: 10px;
+      grid-gap: 10px; }
+      header .navbar .menu .menu__item {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+        header .navbar .menu .menu__item .menu__item1 {
+          animation-delay: 6s; }
+        header .navbar .menu .menu__item .menu__item2 {
+          animation-delay: 12s; }
+        header .navbar .menu .menu__item .menu__item3 {
+          animation-delay: 18s; }
+        header .navbar .menu .menu__item a {
+          background: white;
+          border: 5px solid white;
+          color: #3d3266;
+          text-decoration: none;
+          padding: 1rem; }
+          header .navbar .menu .menu__item a:hover {
+            background: #3d3266;
+            color: white; }
+        header .navbar .menu .menu__item:nth-child(4) a {
+          background: #6699b8;
+          border-color: #6699b8;
+          color: white; }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.imagenPrincipal {
+  height: 80vh;
+  background-image: url("../imagenes/intercambio-usa-1024x768.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 200px; }
+  .imagenPrincipal h2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding-inline: 18px; }
+    .imagenPrincipal h2::first-letter {
+      color: #3d3266; }
+    .imagenPrincipal h2::selection {
+      background: #3d3266;
+      color: black; }
+  .imagenPrincipal p {
+    color: white;
+    text-align: center;
+    background-color: grey;
+    border-radius: 4px;
+    margin-top: 5px; }
+    .imagenPrincipal p::first-line {
+      color: #3d3266; }
+    .imagenPrincipal p::selection {
+      background: black;
+      color: #3d3266; }
+
+.tarjetitas {
+  padding: 60px;
+  display: flex;
+  gap: 30px; }
+  .tarjetitas .tarjetita {
+    background-color: #3d3266;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1; }
+    .tarjetitas .tarjetita .informacion {
+      padding: 0 20px 20px 20px; }
+    .tarjetitas .tarjetita .tarjetita__imagen {
+      max-width: 100%; }
+    .tarjetitas .tarjetita.tarjetitados {
+      flex: 1.5; }
+  .tarjetitas .tarjetitacadet {
+    background-color: cadetblue; }
+  .tarjetitas .tarjetitagrey {
+    background-color: grey; }
+
+p.tarjetita__texto {
+  color: white;
+  font-weight: lighter;
+  margin-bottom: 5px; }
+
+p.tarjetita__texto:hover {
+  font-size: larger; }
+
+h4.tarjetita__titulo {
+  color: white;
+  font-weight: bold; }
+
+.pie {
+  background-color: #3d3266;
+  color: white;
+  padding-block: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around; }
+
+.iconos {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 3px solid white; }
+
+.iconos i {
+  width: 28px;
+  height: 25px;
+  border-radius: 5px; }
+
+.fa-facebook {
+  background-color: black; }
+
+.fa-instagram {
+  background-color: purple; }
+
+.fa-whatsapp, .fa-facebook {
+  background-color: #2e7252; }
+
+.fa-whatsapp, .fa-facebook {
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  border: solid white 1px; }
+  .fa-whatsapp:hover, .fa-facebook:hover {
+    background-color: cadetblue; }
+
+.cajitas {
+  margin-bottom: 3rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .cajitas .cajita {
+    background: #9bb0b0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white; }
+
+.cajitas .cajita1 {
+  width: 200px;
+  height: 80px; }
+
+.cajitas .cajita2 {
+  width: 200px;
+  height: 90px; }
+
+.cajitas .cajita3 {
+  width: 200px;
+  height: 100px; }
+
+/****/
+.cajitas {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  padding: 2rem; }
+
+h3 {
+  color: cadetblue;
+  background-color: lightgray;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 0px;
+  border-top: 3px solid cadetblue; }
+
+h3 {
+  -webkit-animation: text-shadow-drop-center .6s both;
+  animation: text-shadow-drop-center .6s both; }
+
+@-webkit-keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 transparent; }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35); } }
+
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 transparent; }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35); } }

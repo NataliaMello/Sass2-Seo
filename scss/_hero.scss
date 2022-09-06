@@ -1,0 +1,44 @@
+.imagenPrincipal {
+    height: 80vh;
+    background-image: url("../imagenes/intercambio-usa-1024x768.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+
+    h2 {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.596);
+        padding-inline: 18px;
+
+        &::first-letter {
+            color: $mainColor;
+        }
+
+        &::selection {
+            background: $mainColor;
+            color: black;
+        }
+    }
+
+    p {
+        color: white;
+        text-align: center;
+        background-color: grey;
+        border-radius: 4px;
+        margin-top: 5px;
+
+        &::first-line {
+            color: $mainColor;
+        }
+
+        &::selection {
+            background: black;
+            color: $mainColor;
+        }
+    }
+}

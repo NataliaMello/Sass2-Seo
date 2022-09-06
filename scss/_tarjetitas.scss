@@ -1,0 +1,52 @@
+.tarjetitas {
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+    
+
+    .tarjetita {
+        background-color: $mainColor;
+        border-radius: 30px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 1;
+
+        .informacion {
+            padding: 0 20px 20px 20px;
+        }
+
+        .tarjetita__imagen {
+            max-width: 100%;
+        }
+
+        &.tarjetitados {
+            flex: 1.5;
+        }
+    }
+    .tarjetitacadet{
+        background-color: cadetblue;
+    }
+
+    .tarjetitagrey{
+        background-color: grey;
+    }
+
+
+   
+}
+ p.tarjetita__texto{
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 5px;
+ }
+
+ p.tarjetita__texto:hover{
+  font-size: larger;
+ }
+
+ h4.tarjetita__titulo{
+    color: white;
+    font-weight: bold;
+ }

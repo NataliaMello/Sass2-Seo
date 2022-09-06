@@ -1,0 +1,63 @@
+header {
+    background-color: $mainColor;
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+
+    .logo {
+        width: 90px;
+    }
+
+
+    .navbar {
+        display: flex;
+        align-items: center;
+
+        .menu {
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+            grid-gap: 10px;
+            
+
+            .menu__item {
+            -webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
+                    animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
+
+                @for $item from 1 to 4 {
+                    .menu__item#{$item} {
+                        animation-delay: $item*6s;
+                    }
+                    
+                }
+
+                a {
+                    background: white;
+                    border: 5px solid white;
+                    color: $mainColor;
+                    text-decoration: none;
+                    padding: 1rem;
+
+                    &:hover {
+                        background: $mainColor;
+                        color: white;
+                    }
+                }
+
+                &:nth-child(4) {
+
+                    a {
+                        background: $secondaryColor;
+                        border-color: $secondaryColor;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+ @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+ @keyframes fade-in{0%{opacity:0}100%{opacity:1}}

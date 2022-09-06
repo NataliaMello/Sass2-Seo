@@ -1,0 +1,75 @@
+.cajitas {
+    margin-bottom: 3rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   align-items: center;
+   
+
+    .cajita {
+        background:$terceraopcion;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        color: white;
+    }
+}
+
+
+@mixin medidas ($ancho, $alto)
+{
+    width: $ancho;
+    height: $alto;
+    
+}
+.cajitas .cajita1{
+    @include medidas(200px, 80px,)
+    
+}
+
+.cajitas .cajita2{
+    @include medidas(200px, 90px)
+    
+}
+
+
+.cajitas .cajita3{
+    @include medidas(200px, 100px)
+    
+}
+
+
+/****/
+
+@mixin containercajitas {
+    display: flex;
+    justify-content: center;
+    background-color:lightgray;
+    padding: 2rem;
+}
+
+.cajitas{
+    @include containercajitas()
+}
+
+h3{
+    color: cadetblue;
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0px;
+    border-top: 3px solid cadetblue;
+}
+h3{
+
+-webkit-animation:text-shadow-drop-center .6s both;
+animation:text-shadow-drop-center .6s both
+}
+
+
+ @-webkit-keyframes text-shadow-drop-center{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 0 18px rgba(0,0,0,.35)}}
+ @keyframes text-shadow-drop-center{0%{text-shadow:0 0 0 transparent}100%{text-shadow:0 0 18px rgba(0,0,0,.35)}}
